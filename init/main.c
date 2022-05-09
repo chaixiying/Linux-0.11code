@@ -19,6 +19,7 @@
  * Actually only pause and fork are needed inline, so that there
  * won't be any messing with the stack from main(), but we define
  * some others too.
+ * this is a test
  */
 static inline _syscall0(int,fork)
 static inline _syscall0(int,pause)
@@ -54,6 +55,7 @@ extern long startup_time;
 
 /*
  * This is set up by the setup-routine at boot-time
+ * this is a test
  */
 #define EXT_MEM_K (*(unsigned short *)0x90002)
 #define DRIVE_INFO (*(struct drive_info *)0x90080)
